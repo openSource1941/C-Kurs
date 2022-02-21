@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+extern static int globalno;
+
+void get()
+{
+	printf("%d", globalno);
+}

@@ -1,0 +1,99 @@
+/*
+ ============================================================================
+ Name        : example-1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int stringLenght(char str[]);
+void stringTrim(char str[]);
+
+int main(void) {
+
+
+	char* str = "!!!Hello World!!!";
+
+	printf("Length of string: %s is: %d\n",str, stringLenght(str));
+	char str1[] = "    Remove white spaces     ";
+
+	printf("%s", str1);
+	stringTrim(str1);
+	printf(" trimed: %s", str1 );
+	printf("!!!");
+	return 0;
+
+}
+
+
+
+int stringLenght(char str[])
+{
+	int lenght=1;
+	int i = 0;
+	while(str[i]!= '\0')
+	{
+		lenght++;
+		i++;
+	}
+	return lenght;
+}
+
+void stringTrim(char str[])
+{
+	/*int lenght = stringLenght(str);
+	int i, j,count =0;
+	for (i=0; i<lenght ; i++)
+	{
+		if(str[i] == ' ')
+			count ++;
+
+	}
+	for(j= count; j<lenght; j++)
+		{
+			str[j] = str[j+1];
+		}*/
+	int count, i;
+
+	    /*
+	     * Trim leading white spaces
+	     */
+	    count = 0;
+	    while(str[count] == ' ')
+	    {
+	        count++;
+	    }
+
+	    /* Shift all trailing characters to its left */
+	    i = 0;
+	    while(str[i + count] != '\0')
+	    {
+	        str[i] = str[i + count];
+	        i++;
+	    }
+	    str[i] = '\0'; // Terminate string with NULL
+
+
+	    /*
+	     * Trim trailing white spaces
+	     */
+	    i = 0;
+	    count = -1;
+	    while(str[i] != '\0')
+	    {
+	        if(str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
+	        {
+	            count = i;
+	        }
+
+	        i++;
+	    }
+
+	    /* Mark the next character to last non white space character as NULL */
+	    str[count + 1] = '\0';
+}

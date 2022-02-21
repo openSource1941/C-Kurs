@@ -1,0 +1,25 @@
+	.include "defines.h"
+
+	.data
+hello:
+	.string "hello from assembly function\n"
+
+	.globl	printMessage
+	.global sumAsm
+
+printMessage:
+	mov		$SYS_write,%rax
+	mov		$STDOUT,%rbx
+	mov		$hello,%rcx
+	mov		$29,%rdx
+	int		$0x80
+	ret
+
+sumAsm:
+	push	%rbp
+	mov		%rsp, %rbp
+	mov		0x80(%rbp), %rax
+	mov		0xC0(%rbp), %rcx
+	add		%rcx, %rax
+	pop		%rbp
+	ret

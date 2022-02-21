@@ -1,0 +1,14 @@
+/*
+ * file4.h
+ *
+ *  Created on: Feb 9, 2022
+ *      Author: sgojkovic
+ */
+
+#ifndef FILE4_H_
+#define FILE4_H_
+
+extern void use_it();
+extern void increment();
+
+#endif /* FILE4_H_ */

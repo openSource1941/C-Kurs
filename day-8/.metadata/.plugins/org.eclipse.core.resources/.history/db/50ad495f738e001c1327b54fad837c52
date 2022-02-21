@@ -1,0 +1,13 @@
+/*
+ * CircularBuffer.c
+ *
+ *  Created on: Feb 15, 2022
+ *      Author: sgojkovic
+ */
+#include "CircularBuffer.h"
+
+typedef struct circular_buffer {
+	TYPE buffer;
+
+
+}circular_buffer;

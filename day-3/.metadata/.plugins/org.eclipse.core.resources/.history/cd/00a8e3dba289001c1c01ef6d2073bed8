@@ -1,0 +1,13 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(){
+
+
+	int number= 0;
+	printf("Number is: ");
+	scanf("%d",&number);
+	printf("number : %d",number);
+
+	return 0;
+}

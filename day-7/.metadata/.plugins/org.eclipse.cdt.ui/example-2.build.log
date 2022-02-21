@@ -1,0 +1,7 @@
+14:04:45 **** Incremental Build of configuration Debug for project example-2 ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\vigenere12" "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\rot12" "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar12" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\cipher.o" "..\\src\\cipher.c" 
+gcc "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\vigenere12\\Debug" "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\rot12\\Debug" "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar12\\Debug" -o example-2.exe "src\\cipher.o" -lvigenere12 -lrot12 -lcaesar12 
+
+14:04:45 Build Finished. 0 errors, 0 warnings. (took 356ms)
+

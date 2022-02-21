@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int foo();
+static int x;
+
+int main(void)
+{
+	printf("Local variable scope\n");
+
+
+	x = 42;
+	foo();
+	printf("After calling foo: x = %d\n\n", x);
+
+/*	return EXIT_SUCCESS;*/
+	return 0;
+}
+
+/*int foo(int x)*/
+int foo()
+{
+	x = 101;
+	printf("Inside foo: x = %d\n", x);
+	return x;
+
+}

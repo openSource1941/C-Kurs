@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : example-1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "CircularBuffer.h"
+
+int main(void) {
+
+	circular_buffer* buffer;
+	CircularInit(buffer);
+
+
+
+	return 0;
+}

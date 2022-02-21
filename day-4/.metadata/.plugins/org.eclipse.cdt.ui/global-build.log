@@ -1,0 +1,112 @@
+15:31:26 **** Rebuild of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+..\src\example-3.c:14:13: warning: 'sort' defined but not used [-Wunused-function]
+ static void sort(int_least32_t* values, uint_least16_t* indexes, uint_least16_t n)
+             ^~~~
+gcc -o example-3.exe "src\\example-3.o" 
+Info: Nothing to build for example-3
+15:32:26 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+..\src\example-3.c:58:13: warning: 'print' defined but not used [-Wunused-function]
+ static void print() //when using global variables;
+             ^~~~~
+..\src\example-3.c:14:13: warning: 'sort' defined but not used [-Wunused-function]
+ static void sort(int_least32_t* values, uint_least16_t* indexes, uint_least16_t n)
+             ^~~~
+gcc -o example-3.exe "src\\example-3.o" 
+15:33:06 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+..\src\example-3.c:58:13: warning: 'print' defined but not used [-Wunused-function]
+ static void print() //when using global variables;
+             ^~~~~
+..\src\example-3.c:14:13: warning: 'sort' defined but not used [-Wunused-function]
+ static void sort(int_least32_t* values, uint_least16_t* indexes, uint_least16_t n)
+             ^~~~
+gcc -o example-3.exe "src\\example-3.o" 
+15:33:29 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+..\src\example-3.c:14:13: warning: 'sort' defined but not used [-Wunused-function]
+ static void sort(int_least32_t* values, uint_least16_t* indexes, uint_least16_t n)
+             ^~~~
+gcc -o example-3.exe "src\\example-3.o" 
+15:34:02 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+..\src\example-3.c:14:13: warning: 'sort' defined but not used [-Wunused-function]
+ static void sort(int_least32_t* values, uint_least16_t* indexes, uint_least16_t n)
+             ^~~~
+gcc -o example-3.exe "src\\example-3.o" 
+15:35:02 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+..\src\example-3.c:14:13: warning: 'sort' defined but not used [-Wunused-function]
+ static void sort(int_least32_t* values, uint_least16_t* indexes, uint_least16_t n)
+             ^~~~
+gcc -o example-3.exe "src\\example-3.o" 
+15:36:26 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+gcc -o example-3.exe "src\\example-3.o" 
+08:43:28 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+..\src\example-3.c: In function 'sort':
+..\src\example-3.c:32:15: error: assignment of read-only location '*(values + (sizetype)((long long unsigned int)i * 4))'
+     values[i] = values[j];
+               ^
+..\src\example-3.c:33:15: error: assignment of read-only location '*(values + (sizetype)((long long unsigned int)j * 4))'
+     values[j] = tmp;
+               ^
+..\src\example-3.c:36:16: error: assignment of read-only location '*(indexes + (sizetype)((long long unsigned int)i * 2))'
+     indexes[i] = indexes[j];
+                ^
+..\src\example-3.c:37:16: error: assignment of read-only location '*(indexes + (sizetype)((long long unsigned int)j * 2))'
+     indexes[j] = tmp1;
+                ^
+..\src\example-3.c: In function 'even_numbers':
+..\src\example-3.c:52:30: error: assignment of read-only location '*(indexes_of_even_values + (sizetype)((long long unsigned int)k * 2))'
+    indexes_of_even_values[k] = indexes[i];
+                              ^
+..\src\example-3.c:53:19: error: assignment of read-only location '*(even_values + (sizetype)((long long unsigned int)k * 4))'
+    even_values[k] = values[i];
+                   ^
+..\src\example-3.c: In function 'main':
+..\src\example-3.c:110:2: error: too few arguments to function 'sort'
+  sort(values, indexes, n);
+  ^~~~
+..\src\example-3.c:18:13: note: declared here
+ static void sort(const int_least32_t* values, const uint_least16_t* indexes, uint_least16_t n, const int_least32_t threshold)
+             ^~~~
+..\src\example-3.c:115:49: warning: pointer targets in passing argument 4 of 'even_numbers' differ in signedness [-Wpointer-sign]
+  k = even_numbers(values, indexes, even_values, indexes_of_even_values, n, threshold);
+                                                 ^~~~~~~~~~~~~~~~~~~~~~
+..\src\example-3.c:45:23: note: expected 'const uint_least16_t *' {aka 'const short unsigned int *'} but argument is of type 'int_least16_t *' {aka 'short int *'}
+ static uint_least16_t even_numbers(const int_least32_t* values, const uint_least16_t* indexes, const int_least32_t* even_values, const uint_least16_t* indexes_of_even_values, uint_least16_t n, const int_least32_t threshold)
+                       ^~~~~~~~~~~~
+08:45:45 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+..\src\example-3.c: In function 'main':
+..\src\example-3.c:115:49: warning: pointer targets in passing argument 4 of 'even_numbers' differ in signedness [-Wpointer-sign]
+  k = even_numbers(values, indexes, even_values, indexes_of_even_values, n, threshold);
+                                                 ^~~~~~~~~~~~~~~~~~~~~~
+..\src\example-3.c:45:23: note: expected 'uint_least16_t *' {aka 'short unsigned int *'} but argument is of type 'int_least16_t *' {aka 'short int *'}
+ static uint_least16_t even_numbers( int_least32_t* values,uint_least16_t* indexes,  int_least32_t* even_values,  uint_least16_t* indexes_of_even_values, const uint_least16_t n, const int_least32_t threshold)
+                       ^~~~~~~~~~~~
+gcc -o example-3.exe "src\\example-3.o" 
+08:46:54 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+gcc -o example-3.exe "src\\example-3.o" 
+08:49:22 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+gcc -o example-3.exe "src\\example-3.o" 
+08:49:41 **** Incremental Build of configuration Debug for project example-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-3.o" "..\\src\\example-3.c" 
+gcc -o example-3.exe "src\\example-3.o" 

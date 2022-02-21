@@ -1,0 +1,51 @@
+/*
+ ============================================================================
+ Name        : example-1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int stringLenght(char str[]);
+void stringTrim(char str[]);
+
+int main(void) {
+	char* str = "!!!Hello World!!!";
+	printf("Length of string: %s is: %d",str, stringLenght(str));
+	char* str1 = ".....   !!!   ......";
+	printf("%s", str1);
+	stringTrim(str1);
+	printf(" trimed: %s", str1 );
+	return 0;
+
+}
+
+
+
+int stringLenght(char str[])
+{
+	int lenght=1;
+	int i = 0;
+	while(str[i]!= '\0')
+	{
+		lenght++;
+		i++;
+	}
+	return lenght;
+}
+
+void stringTrim(char str[])
+{
+	int lenght = stringLenght(str);
+	int i = 0;
+	while(i < lenght-1)
+	{
+		if(str[i] == ' ')
+			str[i] = str[i+1];
+	}
+}

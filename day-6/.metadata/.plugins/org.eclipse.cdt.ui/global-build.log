@@ -1,0 +1,27 @@
+15:28:02 **** Incremental Build of configuration Debug for project example-4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-4.o" "..\\src\\example-4.c" 
+..\src\example-4.c: In function 'main':
+..\src\example-4.c:55:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+  printf("\n%d",sizeof(example_struct));
+            ~^  ~~~~~~~~~~~~~~~~~~~~~~
+            %I64d
+..\src\example-4.c:55:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+  printf("\n%d",sizeof(example_struct));
+            ~^  ~~~~~~~~~~~~~~~~~~~~~~
+            %I64d
+gcc -o example-4.exe "src\\example-4.o" 
+Info: Nothing to build for example-4
+15:29:50 **** Incremental Build of configuration Debug for project example-4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-4.o" "..\\src\\example-4.c" 
+..\src\example-4.c: In function 'main':
+..\src\example-4.c:53:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+  printf("\n%d",sizeof(example_struct));
+            ~^  ~~~~~~~~~~~~~~~~~~~~~~
+            %I64d
+..\src\example-4.c:53:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+  printf("\n%d",sizeof(example_struct));
+            ~^  ~~~~~~~~~~~~~~~~~~~~~~
+            %I64d
+gcc -o example-4.exe "src\\example-4.o" 

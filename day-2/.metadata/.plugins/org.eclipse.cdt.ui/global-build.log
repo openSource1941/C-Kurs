@@ -1,0 +1,43 @@
+08:06:39 **** Rebuild of configuration Debug for project day-2-integer-packing ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\day-2-integer-packing.o" "..\\src\\day-2-integer-packing.c" 
+..\src\day-2-integer-packing.c: In function 'main':
+..\src\day-2-integer-packing.c:29:25: warning: unknown conversion type character 'l' in format [-Wformat=]
+  printf("added high : %llX\n", big);
+                         ^
+..\src\day-2-integer-packing.c:29:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("added high : %llX\n", big);
+         ^~~~~~~~~~~~~~~~~~~~~
+..\src\day-2-integer-packing.c:29:25: warning: unknown conversion type character 'l' in format [-Wformat=]
+  printf("added high : %llX\n", big);
+                         ^
+..\src\day-2-integer-packing.c:29:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("added high : %llX\n", big);
+         ^~~~~~~~~~~~~~~~~~~~~
+..\src\day-2-integer-packing.c:31:28: warning: unknown conversion type character 'l' in format [-Wformat=]
+  printf("shifted by 32 : %llX\n", big);
+                            ^
+..\src\day-2-integer-packing.c:31:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("shifted by 32 : %llX\n", big);
+         ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\day-2-integer-packing.c:31:28: warning: unknown conversion type character 'l' in format [-Wformat=]
+  printf("shifted by 32 : %llX\n", big);
+                            ^
+..\src\day-2-integer-packing.c:31:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("shifted by 32 : %llX\n", big);
+         ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\day-2-integer-packing.c:33:22: warning: unknown conversion type character 'l' in format [-Wformat=]
+  printf("added low %llX\n", big);
+                      ^
+..\src\day-2-integer-packing.c:33:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("added low %llX\n", big);
+         ^~~~~~~~~~~~~~~~~~
+..\src\day-2-integer-packing.c:33:22: warning: unknown conversion type character 'l' in format [-Wformat=]
+  printf("added low %llX\n", big);
+                      ^
+..\src\day-2-integer-packing.c:33:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("added low %llX\n", big);
+         ^~~~~~~~~~~~~~~~~~
+gcc -o day-2-integer-packing.exe "src\\day-2-integer-packing.o" 
+Info: Nothing to build for day-2-integer-packing
+Info: Nothing to build for day-2-integer-packing

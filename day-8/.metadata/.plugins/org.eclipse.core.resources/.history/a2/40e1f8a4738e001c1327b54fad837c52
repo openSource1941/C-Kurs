@@ -1,0 +1,53 @@
+/*
+ * CircularBuffer.c
+ *
+ *  Created on: Feb 15, 2022
+ *      Author: sgojkovic
+ */
+#include "CircularBuffer.h"
+
+
+
+
+void CircluarInit(circular_buffer* c_buffer)
+{
+
+
+}
+
+
+int CircularIsFull(circular_buffer* c_buffer)
+{
+
+}
+
+int CircularIsEmpty(circular_buffer* c_buffer)
+{
+
+
+}
+
+
+int CircularPut(circular_buffer* c_buffer,TYPE data)
+{
+
+
+}
+
+TYPE CircularGet(circular_buffer* c_buffer)
+{
+
+
+}
+
+int CircularEmptyBuff(circular_buffer* c_buffer)
+{
+
+
+}
+
+void CircularDump(circular_buffer* c_buffer)
+{
+
+
+}

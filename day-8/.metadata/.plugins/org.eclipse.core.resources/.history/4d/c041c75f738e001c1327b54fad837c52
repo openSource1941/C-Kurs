@@ -1,0 +1,24 @@
+/*
+ * CircularBuffer.h
+ *
+ *  Created on: Feb 15, 2022
+ *      Author: sgojkovic
+ */
+
+#ifndef CIRCULARBUFFER_H_
+#define CIRCULARBUFFER_H_
+
+#include <stdint.h>
+#define MAX_LENGHT 10
+#define TYPE int
+
+typedef struct circularBuffer{
+	TYPE const* buffer;
+	circularBuffer* head;
+	circularBuffer* tail;
+
+}circularBuffer;
+
+
+
+#endif /* CIRCULARBUFFER_H_ */

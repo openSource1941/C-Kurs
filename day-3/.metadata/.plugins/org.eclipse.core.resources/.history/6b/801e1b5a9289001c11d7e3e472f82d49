@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+extern int global;
+
+global = 21;
+
+void function2()
+{
+	//global = 20;
+	printf("%d",global);
+}

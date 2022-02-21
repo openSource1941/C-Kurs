@@ -1,0 +1,13 @@
+/*
+ * file2.c
+ *
+ *  Created on: Feb 9, 2022
+ *      Author: sgojkovic
+ */
+
+#include "file3.h"
+
+void use_it(){
+	global_variable = global_variable + 5;
+	printf("%d",global_variable);
+}

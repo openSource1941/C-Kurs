@@ -1,0 +1,15 @@
+/*
+ * file2.c
+ *
+ *  Created on: Feb 9, 2022
+ *      Author: sgojkovic
+ */
+#include <stdio.h>
+#include "file3.h"
+void use_it();
+
+void use_it(){
+
+
+	printf("%d",5);
+}

@@ -1,0 +1,67 @@
+/*
+ * Employee.c
+ *
+ *  Created on: Feb 16, 2022
+ *      Author: sgojkovic
+ */
+
+/*
+typedef struct employee{
+	char name[NAME_SIZE];
+	char group[GROUP_NAME_SIZE];
+	float experience;
+	struct employee* prev;
+	struct employee* next;
+
+}employee;
+
+typedef struct EmployeeList{
+
+	employee* head;
+	employee* tail;
+	int size;
+}EmployeeList;*/
+
+#include "Employee.h"
+{
+
+}
+
+
+void EmployeeListCreate(EmployeeList* emp_list)
+{
+	emp_list->head = NULL;
+	emp_list->tail = NULL;
+	emp_list->size = 0;
+}
+
+void EmployeeListDestroy(EmployeeList* emp_list)
+{
+
+}
+
+void EmployeeListInsert(EmployeeList* emp_list, employee emp, int n)
+{
+
+}
+
+void EmployeeListDelete(EmployeeList* emp_list, employee emp, int n)
+{
+
+}
+
+employee EmployeeListGetElement(EmployeeList* emp_list, int n)
+{
+	employee temp;
+	return temp;
+}
+
+int EmployeeListSize(EmployeeList* emp_list)
+{
+	return 0;
+}
+
+void EmployeeListDump(EmployeeList* emp_list)
+{
+
+}

@@ -1,0 +1,17 @@
+/*
+ * file1.c
+ *
+ *  Created on: Feb 9, 2022
+ *      Author: sgojkovic
+ */
+
+#include "file3.h"
+
+int global_variable = 1;
+void increment();
+
+void increment()
+{
+	global_variable = global_variable + 1 ;
+}
+

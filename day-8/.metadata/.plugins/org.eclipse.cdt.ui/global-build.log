@@ -1,0 +1,15 @@
+13:42:17 **** Rebuild of configuration Debug for project example-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-2.o" "..\\src\\example-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Employee.o" "..\\src\\Employee.c" 
+gcc -o example-2.exe "src\\Employee.o" "src\\example-2.o" 
+Info: Nothing to build for example-2
+Info: Nothing to build for example-2
+14:29:23 **** Incremental Build of configuration Debug for project example-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Employee.o" "..\\src\\Employee.c" 
+gcc -o example-2.exe "src\\Employee.o" "src\\example-2.o" 
+14:31:26 **** Incremental Build of configuration Debug for project example-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Employee.o" "..\\src\\Employee.c" 
+gcc -o example-2.exe "src\\Employee.o" "src\\example-2.o" 

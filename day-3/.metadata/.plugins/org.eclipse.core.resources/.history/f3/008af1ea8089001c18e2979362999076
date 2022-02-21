@@ -1,0 +1,13 @@
+/*
+ * file3.h
+ *
+ *  Created on: Feb 9, 2022
+ *      Author: sgojkovic
+ */
+
+#ifndef FILE3_H_
+#define FILE3_H_
+
+extern int global_variable=0;
+
+#endif /* FILE3_H_ */

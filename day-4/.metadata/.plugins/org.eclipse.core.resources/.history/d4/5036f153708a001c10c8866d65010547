@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        : example-2.c
+ Author      : Stefan Gojković
+ Version     :
+ Copyright   :
+ Description :
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "functionEg.h"
+
+int main(void)
+{
+	int i;
+
+	// Recursive functions
+	printf("\n");
+	printf("Fibonacci number 10 is %ld\n", fibonacci(10));
+	printf("Factorial of 10 is %ld\n", factorial(10));
+	printf("Factorial of 10 using no recursion is %ld\n",factorial_no_recursion(10));
+
+	// Static variable inside the function
+	printf("\nExample of static used in function:\n");
+	for (i=0; i<5; i++)
+	{
+		printf("ret = %d\n",staticInFunction());
+	}
+
+	return EXIT_SUCCESS;
+}

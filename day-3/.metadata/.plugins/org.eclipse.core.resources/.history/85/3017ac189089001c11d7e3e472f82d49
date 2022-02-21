@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int global = 3;
+
+
+void function1()
+{
+	global = 5;
+}

@@ -1,0 +1,60 @@
+#include <pthread.h>
+#include <stdio.h>
+
+
+static pthread_mutex_t cs_mutex;
+/* Telo niti 1 */
+void* print1 (void* pParam)
+{
+    int i;
+    for (i = 0 ; i < 1000 ; i++)
+    {
+    	 pthread_mutex_lock(&cs_mutex);
+    	 	 printf("1");
+    	 pthread_mutex_unlock(&cs_mutex);
+    }
+
+    return 0;
+}
+
+/* Telo niti 2 */
+void* print2(void* pParam)
+{
+    int i;
+    for (i = 0 ; i < 1000 ; i++)
+    {
+    	 pthread_mutex_lock(&cs_mutex);
+    	 	 printf("2");
+    	 pthread_mutex_unlock(&cs_mutex);
+    }
+
+    return 0;
+}
+
+/* Telo niti 3 */
+void* print3(void* pParam)
+{
+    int i;
+    for (i = 0 ; i < 1000 ; i++)
+    {
+    	 pthread_mutex_lock(&cs_mutex);
+    	 	 printf("3");
+    	 pthread_mutex_unlock(&cs_mutex);
+    }
+
+    return 0;
+}
+
+void main (void)
+{
+    pthread_t hPrint1, hPrint2, hPrint3;
+
+    pthread_mutex_init(&cs_mutex, NULL);
+    /* Formiranje niti */
+    pthread_create(&hPrint1, NULL, print1, 0);
+    pthread_create(&hPrint2, NULL, print2, 0);
+    pthread_create(&hPrint3, NULL, print3, 0);
+
+    getchar();
+    pthread_mutex_destroy(&cs_mutex);
+}

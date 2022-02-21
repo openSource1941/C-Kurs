@@ -1,0 +1,8 @@
+09:30:14 **** Rebuild of configuration Debug for project rot11 ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar11" -O0 -g3 -Wall -c -fmessage-length=0 -o rot13.o "..\\rot13.c" 
+ar -r librot11.a rot13.o 
+ar: creating librot11.a
+
+09:30:14 Build Finished. 0 errors, 0 warnings. (took 214ms)
+

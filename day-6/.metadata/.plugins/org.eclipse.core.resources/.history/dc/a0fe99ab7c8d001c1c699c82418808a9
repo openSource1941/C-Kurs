@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+ Name        : example-1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int stringLenght(char str[]);
+
+int main(void) {
+	char* str = "!!!Hello World!!!";
+	printf("%d", stringLenght(str));
+
+	return 0;
+
+}
+
+
+
+int stringLenght(char str[])
+{
+	int lenght=1;
+	int i = 0;
+	while(str[i]!= '\0')
+	{
+		lenght++;
+		i++;
+	}
+	return lenght;
+}

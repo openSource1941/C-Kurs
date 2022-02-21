@@ -1,0 +1,25 @@
+/*
+ ============================================================================
+ Name        : example-2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "Employee.h"
+
+int main() {
+	EmployeeList emp_list;
+	EmployeeListCreate(&emp_list);
+	employee* emp;
+	emp = EmployeeCreate("Stefan", "Syrmia", 1.5);
+	EmployeeListInsert(&emp_list, emp, 1);
+	employee* emp1;
+	emp1 = EmployeeCreate("Nikola", "Syrmia", 8.5);
+	EmployeeListInsert(&emp_list, emp1, 1);
+	return 0;
+}

@@ -1,0 +1,12 @@
+/*
+ * file1.c
+ *
+ *  Created on: Feb 9, 2022
+ *      Author: sgojkovic
+ */
+
+#define file3.h
+
+#include "file3.h"
+
+int global = 2;

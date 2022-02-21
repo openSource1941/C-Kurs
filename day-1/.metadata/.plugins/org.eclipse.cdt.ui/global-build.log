@@ -1,0 +1,46 @@
+15:20:26 **** Rebuild of configuration Debug for project day-1-example-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-1.o" "..\\src\\example-1.c" 
+gcc -o day-1-example-1.exe "src\\example-1.o" 
+15:20:32 **** Rebuild of configuration Debug for project day-1-example-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-2.o" "..\\src\\example-2.c" 
+..\src\example-2.c: In function 'main':
+..\src\example-2.c:32:2: warning: 'uninit_var2' is used uninitialized in this function [-Wuninitialized]
+  printf("%d\n%d\n\n", uninit_var1, uninit_var2);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o day-1-example-2.exe "src\\example-2.o" 
+15:20:38 **** Rebuild of configuration Debug for project day-1-program ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\day-1-program.o" "..\\src\\day-1-program.c" 
+gcc -o day-1-program.exe "src\\day-1-program.o" 
+15:44:36 **** Rebuild of configuration Debug for project day-1-example-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-1.o" "..\\src\\example-1.c" 
+gcc -o day-1-example-1.exe "src\\example-1.o" 
+Info: Nothing to build for day-1-example-1
+08:03:35 **** Rebuild of configuration Debug for project day-1-example-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example-2.o" "..\\src\\example-2.c" 
+..\src\example-2.c: In function 'main':
+..\src\example-2.c:32:2: warning: 'uninit_var2' is used uninitialized in this function [-Wuninitialized]
+  printf("%d\n%d\n\n", uninit_var1, uninit_var2);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o day-1-example-2.exe "src\\example-2.o" 
+08:03:39 **** Rebuild of configuration Debug for project day-1-program ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\day-1-program.o" "..\\src\\day-1-program.c" 
+gcc -o day-1-program.exe "src\\day-1-program.o" 
+Info: Nothing to build for day-1-program
+Info: Nothing to build for day-1-program
+Info: Nothing to build for day-1-program
+Info: Nothing to build for day-1-program
+Info: Nothing to build for day-1-program
+Info: Nothing to build for day-1-program
+Info: Nothing to build for day-1-program
+Info: Nothing to build for day-1-program
+Info: Nothing to build for day-1-program
+08:04:48 **** Incremental Build of configuration Debug for project day-1-program ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\day-1-program.o" "..\\src\\day-1-program.c" 
+gcc -o day-1-program.exe "src\\day-1-program.o" 

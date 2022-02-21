@@ -1,0 +1,26 @@
+/*
+ ============================================================================
+ Name        : example-1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "file3.h"
+#include "file4.h"
+
+
+int main() {
+
+
+	//increment();
+	//use_it();
+
+
+	return 0;
+}

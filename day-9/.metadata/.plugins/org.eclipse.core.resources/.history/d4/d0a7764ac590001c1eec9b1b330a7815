@@ -1,0 +1,91 @@
+/*#include <pthread.h>
+#include <stdio.h>
+
+
+static pthread_mutex_t cs_mutex;
+pthread_cond_t cond;
+int count = 0;
+
+void* print (void* pParam)
+{
+
+    char c = *(char*)pParam;
+    int i;
+    for (i = 0 ; i < 100 ; i++)
+    {
+    	if (count)
+        pthread_mutex_lock(&cs_mutex);
+            printf("%c", c);
+        pthread_mutex_unlock(&cs_mutex);
+    }
+
+    return 0;
+    return 0;
+}
+
+
+int main ()
+{
+    pthread_t hPrint1, hPrint2, hPrint3;
+
+    char c1 = '1';
+    char c2 = '2';
+    char c3 = '3';
+
+    pthread_mutex_init(&cs_mutex, NULL);
+     Formiranje niti
+
+    pthread_create(&hPrint1, NULL, print, (void*)&c1);
+    pthread_create(&hPrint2, NULL, print, (void*)&c2);
+    pthread_create(&hPrint3, NULL, print, (void*)&c3);
+
+    getchar();
+    pthread_mutex_destroy(&cs_mutex);
+
+    return 0;
+}*/
+
+#include <stdio.h>
+#include <pthread.h>
+pthread_cond_t cond1 = PTHREAD_COND_INITIALIZER;
+pthread_cond_t cond2 = PTHREAD_COND_INITIALIZER;
+pthread_cond_t cond3 = PTHREAD_COND_INITIALIZER;
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+int value = 1;
+void *foo(void *n){
+   while(1) {
+      pthread_mutex_lock(&lock);
+      if (value != (int)*(int*)n) {
+         if ((int)*(int*)n == 1) {
+            pthread_cond_wait(&cond1, &lock);
+         } else if ((int)*(int*)n == 2) {
+            pthread_cond_wait(&cond2, &lock);
+         } else {
+            pthread_cond_wait(&cond3, &lock);
+         }
+      }
+      printf("%d ", *(int*)n);
+      if (value == 3) {
+         value = 1;
+         pthread_cond_signal(&cond1);
+      }
+      else if(value == 1) {
+         value = 2;
+         pthread_cond_signal(&cond2);
+      } else if (value == 2) {
+            value = 3;
+            pthread_cond_signal(&cond3);
+      }
+      pthread_mutex_unlock(&lock);
+   }
+   return NULL;
+}
+int main(){
+   pthread_t tid1, tid2, tid3;
+   int n1 = 1, n2 = 2, n3 = 3;
+   pthread_create(&tid1, NULL, foo, (void *)&n1);
+   pthread_create(&tid2, NULL, foo, (void *)&n2);
+   pthread_create(&tid3, NULL, foo, (void *)&n3);
+   while(1);
+   return 0;
+}

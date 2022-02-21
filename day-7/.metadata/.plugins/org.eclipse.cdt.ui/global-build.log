@@ -1,0 +1,53 @@
+14:03:09 **** Incremental Build of configuration Debug for project caesar12 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ceasar.o "..\\ceasar.c" 
+gcc -shared -o libcaesar12.dll ceasar.o 
+14:03:09 **** Incremental Build of configuration Debug for project caesar12 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ceasar.o "..\\ceasar.c" 
+gcc -shared -o libcaesar12.dll ceasar.o 
+14:03:10 **** Incremental Build of configuration Debug for project rot12 ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar12" -O0 -g3 -Wall -c -fmessage-length=0 -o rot13.o "..\\rot13.c" 
+gcc "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar12\\Debug" -shared -o librot12.dll rot13.o -lcaesar12 
+14:03:10 **** Incremental Build of configuration Debug for project vigenere12 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o vigenere.o "..\\vigenere.c" 
+gcc -shared -o libvigenere12.dll vigenere.o 
+14:03:11 **** Incremental Build of configuration Debug for project caesar12 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ceasar.o "..\\ceasar.c" 
+gcc -shared -o libcaesar12.dll ceasar.o 
+14:03:11 **** Incremental Build of configuration Debug for project vigenere12 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o vigenere.o "..\\vigenere.c" 
+gcc -shared -o libvigenere12.dll vigenere.o 
+14:03:11 **** Incremental Build of configuration Debug for project rot12 ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar12" -O0 -g3 -Wall -c -fmessage-length=0 -o rot13.o "..\\rot13.c" 
+gcc "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar12\\Debug" -shared -o librot12.dll rot13.o -lcaesar12 
+14:03:12 **** Incremental Build of configuration Debug for project example-2 ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\vigenere12" "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\rot12" "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar12" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\cipher.o" "..\\src\\cipher.c" 
+..\src\cipher.c: In function 'main':
+..\src\cipher.c:14:7: warning: unused variable 'decrypted' [-Wunused-variable]
+  char decrypted[100];
+       ^~~~~~~~~
+..\src\cipher.c:13:7: warning: unused variable 'encrypted' [-Wunused-variable]
+  char encrypted[100];
+       ^~~~~~~~~
+..\src\cipher.c:12:7: warning: unused variable 'in' [-Wunused-variable]
+  char in[100] = "the QUICK brown FOX jumps over THE lazy DOG";
+       ^~
+gcc "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\vigenere12\\Debug" "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\rot12\\Debug" "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar12\\Debug" -o example-2.exe "src\\cipher.o" -lvigenere12 -lrot12 -lcaesar12 
+Info: Nothing to build for caesar12
+Info: Nothing to build for vigenere12
+Info: Nothing to build for rot12
+Info: Nothing to build for example-2
+Info: Nothing to build for caesar12
+Info: Nothing to build for vigenere12
+Info: Nothing to build for rot12
+14:04:45 **** Incremental Build of configuration Debug for project example-2 ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\vigenere12" "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\rot12" "-IC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar12" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\cipher.o" "..\\src\\cipher.c" 
+gcc "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\vigenere12\\Debug" "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\rot12\\Debug" "-LC:\\Users\\sgojkovic\\Desktop\\Obuka\\C kurs\\day-7\\caesar12\\Debug" -o example-2.exe "src\\cipher.o" -lvigenere12 -lrot12 -lcaesar12 

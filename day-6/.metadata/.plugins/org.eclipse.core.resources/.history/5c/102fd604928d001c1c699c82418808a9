@@ -1,0 +1,102 @@
+/*
+ ============================================================================
+ Name        : example-1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int stringLenght(char str[]);
+void stringTrim(char str[]);
+int extractSubstring(const char* inStr, char* outStr, int beginning, int end);
+
+int main(void) {
+
+
+	char* str = "!!!Hello World!!!";
+	char str2[10];
+	printf("Length of string: %s is: %d\n",str, stringLenght(str));
+	char str1[] = "    Remove white spaces     ";
+
+	printf("%s", str1);
+	stringTrim(str1);
+	printf(" trimed: %s", str1 );
+	printf("Added to see removed trailing whitespaces.");
+	if( extractSubstring(str, str2, 5, 15))
+		printf("Substring from %s is %s", str, str2);
+	else
+		printf("Check the parameters of function! Something is wrong!");
+
+	return 0;
+
+}
+
+
+
+int stringLenght(char str[])
+{
+	int lenght=1;
+	int i = 0;
+	while(str[i]!= '\0')
+	{
+		lenght++;
+		i++;
+	}
+	return lenght;
+}
+
+void stringTrim(char str[])
+{
+
+	int count, i;
+
+
+	    count = 0;
+	    while(str[count] == ' ')
+	    {
+	        count++;
+	    }
+	    i = 0;
+	    while(str[i + count] != '\0')
+	    {
+	        str[i] = str[i + count];
+	        i++;
+	    }
+	    str[i] = '\0';
+
+
+	    i = 0;
+	    count = -1;
+	    while(str[i] != '\0')
+	    {
+	        if(str[i] != ' ' && str[i] != '\t' && str[i] != '\n')
+	        {
+	            count = i;
+	        }
+
+	        i++;
+	    }
+
+	    str[count + 1] = '\0';
+}
+
+int extractSubstring(const char* inStr, char* outStr, int beginning, int end)
+{
+	int lenght = stringLenght((char*)inStr), i;
+	if((end-beginning) < lenght && beginning < end)
+	{
+		for (i = beginning; i <= end ; i++)
+		{
+			outStr[i] = inStr[i];
+		}
+		outStr[i + 1] = '\0';
+		return 1;
+	}
+	else
+		return 0;
+}

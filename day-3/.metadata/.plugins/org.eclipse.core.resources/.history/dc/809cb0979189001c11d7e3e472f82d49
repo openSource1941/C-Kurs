@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : example-2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "file1.c"
+#include "file2.c"
+extern function1();
+extern function2();
+
+int main() {
+
+	function1();
+	function2();
+	return 0;
+}

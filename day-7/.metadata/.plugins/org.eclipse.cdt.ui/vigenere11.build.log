@@ -1,0 +1,8 @@
+08:50:36 **** Rebuild of configuration Debug for project vigenere11 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o vigenere.o "..\\vigenere.c" 
+ar -r libvigenere11.a vigenere.o 
+ar: creating libvigenere11.a
+
+08:50:37 Build Finished. 0 errors, 0 warnings. (took 413ms)
+

@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int globalna=25;
+
+void set()
+{
+	globalna = 20;
+}

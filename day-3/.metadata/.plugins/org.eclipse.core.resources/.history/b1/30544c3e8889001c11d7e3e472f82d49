@@ -1,0 +1,7 @@
+extern int global;
+global = 1;
+
+void function1()
+{
+	global = 5;
+}

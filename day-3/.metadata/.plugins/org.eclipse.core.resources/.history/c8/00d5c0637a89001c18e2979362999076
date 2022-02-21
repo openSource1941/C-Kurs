@@ -1,0 +1,13 @@
+/*
+ ============================================================================
+ Name        : example-1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#define SOME_CONST 5 + 2
+const int some_const = 5 + 2;
+x = 7 * SOME_CONST; y = 7 * some_const;

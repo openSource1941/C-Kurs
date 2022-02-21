@@ -1,0 +1,58 @@
+/*
+ * CircularBuffer.c
+ *
+ *  Created on: Feb 15, 2022
+ *      Author: sgojkovic
+ */
+#include "CircularBuffer.h"
+
+
+
+
+void CircluarInit(circular_buffer* c_buffer)
+{
+	c_buffer->max_len = MAX_LENGHT;
+	c_buffer->buffer = (TYPE*)malloc(sizeof(TYPE)*c_buffer->max_len);
+	c_buffer->head = c_buffer->buffer;
+	c_buffer->tail = c_buffer->buffer;
+
+
+}
+
+
+int CircularIsFull(circular_buffer* c_buffer)
+{
+	return 0;
+}
+
+int CircularIsEmpty(circular_buffer* c_buffer)
+{
+
+	return 0;
+
+}
+
+
+int CircularPut(circular_buffer* c_buffer,TYPE data)
+{
+	return 0;
+
+}
+
+TYPE CircularGet(circular_buffer* c_buffer)
+{
+	TYPE a=0;
+	return a;
+}
+
+int CircularEmptyBuff(circular_buffer* c_buffer)
+{
+	return 0;
+
+}
+
+void CircularDump(circular_buffer* c_buffer)
+{
+
+
+}

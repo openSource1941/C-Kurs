@@ -1,0 +1,44 @@
+/*
+ * Employee.c
+ *
+ *  Created on: Feb 16, 2022
+ *      Author: sgojkovic
+ */
+
+
+#include "Employee.h"
+
+void EmployeeListCreate(EmployeeList* emp_list)
+{
+
+}
+
+void EmployeeListDestroy(EmployeeList* emp_list)
+{
+
+}
+
+void EmployeeListInsert(EmployeeList* emp_list, employee emp, int)
+{
+
+}
+
+void EmployeeListDelete(EmployeeList*, employee, int)
+{
+
+}
+
+employee EmployeeListGetElement(EmployeeList*, int)
+{
+
+}
+
+int EmployeeListSize(EmployeeList*)
+{
+
+}
+
+void EmployeeListDump(EmployeeList*)
+{
+
+}

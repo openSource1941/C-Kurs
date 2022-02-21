@@ -1,0 +1,6 @@
+extern global = 5;
+
+void function2()
+{
+	printf("%d",global);
+}

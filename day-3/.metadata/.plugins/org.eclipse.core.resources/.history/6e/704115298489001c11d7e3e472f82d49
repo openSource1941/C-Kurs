@@ -1,0 +1,9 @@
+/*
+ * file2.c
+ *
+ *  Created on: Feb 9, 2022
+ *      Author: sgojkovic
+ */
+#include <stdio.h>
+#include "file3.h"
+#include "file4.h"
